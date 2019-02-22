@@ -1,0 +1,5 @@
+---
+artifact_type: 'maven'
+version: '1.0.0'
+project: 'zzz-test-release'
+log_dir: 'zzz-test-release-maven-release-master/7/'
