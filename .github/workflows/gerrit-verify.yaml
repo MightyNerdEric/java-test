@@ -1,0 +1,9 @@
+---
+name: Maven verify/merge
+
+on:
+  push
+
+jobs:
+  mvn-merge:
+    uses: mightynerderic/releng-reusable-workflows/.github/workflows/compose-maven-merge.yaml@mvn-merge
