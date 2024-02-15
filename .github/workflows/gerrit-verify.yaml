@@ -8,4 +8,5 @@ jobs:
   mvn-merge:
     uses: mightynerderic/releng-reusable-workflows/.github/workflows/compose-maven-merge.yaml@mvn-merge
     with:
+      # Arbitrary Change
       MVN_PROFILES: "snapshots"
