@@ -8,5 +8,8 @@ jobs:
   mvn-merge:
     uses: mightynerderic/releng-reusable-workflows/.github/workflows/compose-maven-merge.yaml@mvn-merge
     with:
-      # Arbitrary Change
       MVN_PROFILES: "snapshots"
+      MVN_OPTS: >-
+        -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
+        -Dmaven.repo.local=/tmp/r -Dorg.ops4j.pax.url.mvn.localRepository=/tmp/r
+        -DaltDeploymentRepository=staging::default::file:m2repo -Xlog:debug
